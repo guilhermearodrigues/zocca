@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zocca - Serviços de Automação de Processos Robóticos</title>
+    <meta name="description" content="Transforme seu negócio com as soluções de RPA de ponta da Zocca. Automatize tarefas repetitivas e aumente a eficiência.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Zocca</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#solutions">Soluções</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transforme Seu Negócio com <span class="highlight">Automação Inteligente</span></h1>
+                <p>A Zocca oferece soluções de ponta em Automação de Processos Robóticos (RPA) que otimizam operações, reduzem custos e aceleram a transformação digital para empresas de todos os tamanhos.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Começar Agora</a>
+                    <a href="#services" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="automation-graphic">
+                    <div class="automation-container">
+                        <!-- Central Hub -->
+                        <div class="central-hub">
+                            <div class="hub-core">
+                                <svg width="60" height="60" viewBox="0 0 60 60">
+                                    <circle cx="30" cy="30" r="25" fill="none" stroke="rgba(240, 171, 252, 0.5)" stroke-width="2"/>
+                                    <circle cx="30" cy="30" r="15" fill="rgba(240, 171, 252, 0.3)"/>
+                                    <path d="M20 30 L40 30 M30 20 L30 40" stroke="#f0abfc" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                                <div class="pulse-ring"></div>
+                            </div>
+                        </div>
+
+                        <!-- Process Nodes -->
+                        <div class="process-node node-1" data-label="Dados">
+                            <div class="node-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect x="8" y="10" width="24" height="20" rx="2" fill="none" stroke="#a855f7" stroke-width="2"/>
+                                    <path d="M12 14 L28 14 M12 18 L24 18 M12 22 L28 22 M12 26 L20 26" stroke="#a855f7" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="process-node node-2" data-label="Processamento">
+                            <div class="node-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <circle cx="20" cy="20" r="12" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                                    <path d="M15 20 L20 15 L25 20 L20 25 Z" fill="#8b5cf6"/>
+                                    <circle cx="20" cy="8" r="2" fill="#c084fc"/>
+                                    <circle cx="32" cy="20" r="2" fill="#c084fc"/>
+                                    <circle cx="20" cy="32" r="2" fill="#c084fc"/>
+                                    <circle cx="8" cy="20" r="2" fill="#c084fc"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="process-node node-3" data-label="Automação">
+                            <div class="node-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect x="12" y="8" width="16" height="24" rx="3" fill="none" stroke="#7c3aed" stroke-width="2"/>
+                                    <circle cx="20" cy="16" r="3" fill="#ddd6fe"/>
+                                    <rect x="16" y="22" width="8" height="2" fill="#7c3aed"/>
+                                    <rect x="16" y="26" width="8" height="2" fill="#7c3aed"/>
+                                    <circle cx="20" cy="14" r="1" fill="#7c3aed"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="process-node node-4" data-label="Resultados">
+                            <div class="node-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <circle cx="20" cy="20" r="15" fill="none" stroke="#22c55e" stroke-width="2"/>
+                                    <path d="M14 20 L18 24 L26 16" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Animated Connections -->
+                        <svg class="connections" width="100%" height="100%">
+                            <defs>
+                                <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0"/>
+                                    <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1"/>
+                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0"/>
+                                </linearGradient>
+                            </defs>
+                            <path class="connection-line line-1" stroke="url(#connectionGradient)" stroke-width="2" fill="none"/>
+                            <path class="connection-line line-2" stroke="url(#connectionGradient)" stroke-width="2" fill="none"/>
+                            <path class="connection-line line-3" stroke="url(#connectionGradient)" stroke-width="2" fill="none"/>
+                            <path class="connection-line line-4" stroke="url(#connectionGradient)" stroke-width="2" fill="none"/>
+                        </svg>
+
+                        <!-- Data Particles -->
+                        <div class="data-particle particle-1"></div>
+                        <div class="data-particle particle-2"></div>
+                        <div class="data-particle particle-3"></div>
+                        <div class="data-particle particle-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços de RPA</h2>
+                <p>Soluções de automação abrangentes adaptadas às necessidades do seu negócio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>Avaliação de Processos</h3>
+                    <p>Identificamos e analisamos seus processos de negócio para determinar as melhores oportunidades de automação e potencial de ROI.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>Implementação de RPA</h3>
+                    <p>Desenvolvemos e implementamos soluções RPA personalizadas usando plataformas líderes da indústria como Microsoft Power Automate, UiPath e Automation Anywhere.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>Otimização de Processos</h3>
+                    <p>Monitoramos e otimizamos continuamente seus processos automatizados para garantir máxima eficiência e desempenho.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>Manutenção e Suporte</h3>
+                    <p>Suporte contínuo, atualizações e manutenção para manter suas soluções RPA funcionando de forma suave e eficaz.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>Integração de Sistemas</h3>
+                    <p>Integramos soluções RPA com seus sistemas e softwares existentes para operações unificadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soluções por Setor</h2>
+                <p>Soluções RPA personalizadas para cada indústria</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-item">
+                    <h3>Serviços Financeiros</h3>
+                    <p>Automatize processamento de empréstimos, relatórios de conformidade e integração de clientes</p>
+                </div>
+                <div class="solution-item">
+                    <h3>Saúde</h3>
+                    <p>Otimize registro de pacientes, processamento de seguros e agendamento de consultas</p>
+                </div>
+                <div class="solution-item">
+                    <h3>Transportes</h3>
+                    <p>Otimize gestão da cadeia de suprimentos e rastreamento de entregas</p>
+                </div>
+                <div class="solution-item">
+                    <h3>Varejo e E-commerce</h3>
+                    <p>Aprimore processamento de pedidos, gestão de estoque e atendimento ao cliente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que Escolher a Zocca?</h2>
+                <p>Experimente o poder da automação inteligente</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-number">80%</div>
+                    <h3>Redução de Custos</h3>
+                    <p>Economia média de custos através da automação de processos</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">90%</div>
+                    <h3>Melhoria na Precisão</h3>
+                    <p>Redução de erros humanos e falhas de processamento</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">24h</div>
+                    <h3>Operações</h3>
+                    <p>Capacidade de processamento automatizado 24 horas por dia</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">3x</div>
+                    <h3>Processamento Mais Rápido</h3>
+                    <p>Melhoria na velocidade dos tempos de conclusão de tarefas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre a Zocca</h2>
+                    <p>Na Zocca, somos apaixonados por transformar negócios através da automação inteligente. Com anos de experiência em implementação de RPA, ajudamos organizações a desbloquear seu potencial automatizando tarefas repetitivas e otimizando fluxos de trabalho.</p>
+                    <p>Nossa equipe de especialistas certificados em RPA trabalha em estreita colaboração com clientes para entender seus desafios únicos e entregar soluções personalizadas que geram resultados mensuráveis.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projetos Concluídos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="team-placeholder">
+                        <div class="team-icon"></div>
+                        <p>Equipe Especialista em RPA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pronto para Automatizar?</h2>
+                <p>Vamos discutir como o RPA pode transformar seu negócio</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Entre em Contato</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon"></span>
+                        <span>contato@zocca.dev</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon"></span>
+                        <span>+55 (11) 94469-1506</span>
+                    </div>
+                </div>
+                <form 
+                class="contact-form" 
+                action="https://formspree.io/f/xkgqbwkd"
+                method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Empresa</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone (opcional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+55 (11) 99999-9999">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Zocca</h3>
+                    <p>Transformando negócios através da automação inteligente</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#services">Implementação de RPA</a></li>
+                            <li><a href="#services">Avaliação de Processos</a></li>
+                            <li><a href="#services">Treinamento</a></li>
+                            <li><a href="#services">Suporte</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Setores</h4>
+                        <ul>
+                            <li><a href="#solutions">Serviços Financeiros</a></li>
+                            <li><a href="#solutions">Saúde</a></li>
+                            <li><a href="#solutions">Manufatura</a></li>
+                            <li><a href="#solutions">Varejo</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#about">Sobre Nós</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Serviço</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Zocca. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
