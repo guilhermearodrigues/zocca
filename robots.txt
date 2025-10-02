@@ -1,0 +1,38 @@
+# robots.txt para Zocca - Automação RPA
+# Permite que todos os motores de busca indexem o site
+
+User-agent: *
+Allow: /
+
+# Bloquear recursos administrativos (se existirem no futuro)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Permitir rastreamento de CSS e JS para melhor renderização
+Allow: /*.css$
+Allow: /*.js$
+
+# Sitemap
+Sitemap: https://zocca.dev/sitemap.xml
+
+# Configurações específicas para Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Configurações para Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Bloquear bots maliciosos conhecidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

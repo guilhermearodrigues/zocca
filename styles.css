@@ -947,6 +947,17 @@ body {
     color: #cbd5e1;
 }
 
+.contact-item a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #f0abfc;
+    text-decoration: underline;
+}
+
 .contact-icon {
     font-size: 1.5rem;
 }

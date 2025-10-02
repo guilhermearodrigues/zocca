@@ -332,17 +332,22 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add loading animation
+// Add loading animation - otimizado para Core Web Vitals
 window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.3s ease';
+    // Usar requestAnimationFrame para evitar blocking
+    requestAnimationFrame(() => {
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.3s ease';
 
+        requestAnimationFrame(() => {
+            document.body.style.opacity = '1';
+        });
+    });
+
+    // Initialize automation graphic com delay para não bloquear carregamento
     setTimeout(() => {
-        document.body.style.opacity = '1';
+        initializeAutomationGraphic();
     }, 100);
-
-    // Initialize automation graphic
-    initializeAutomationGraphic();
 });
 
 // Interactive automation graphic
